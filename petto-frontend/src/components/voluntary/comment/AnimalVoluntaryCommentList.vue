@@ -74,7 +74,7 @@ export default {
             this.commentNo = commentsNo
             axios.delete(`http://localhost:8888/petto/comments/${this.commentNo}`)
                 .then(() => {
-                    alert('게시글을 삭제했습니다.')
+                    alert('댓글을 삭제했습니다.')
                     location.reload(true);
                 })
                .catch(res => {
