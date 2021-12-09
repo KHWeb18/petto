@@ -112,7 +112,7 @@ export default {
             const { volunteerNo } = this.voluntaryboard
             axios.delete(`http://localhost:8888/petto/voluntaryBoard/${volunteerNo}`)
                 .then(() => {
-                    alert('댓글을 삭제했습니다.')
+                    alert('게시글을 삭제했습니다.')
                     this.$router.push({ name: 'AnimalVoluntaryListPage' })
                 })
                .catch(res => {
